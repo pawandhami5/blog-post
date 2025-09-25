@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Post = require("../models/Post");
+const Post = require("../models/post");
 const asyncHandler = require("../utils/asyncHandler");
 const { default: mongoose } = require("mongoose");
 const multer = require("multer");

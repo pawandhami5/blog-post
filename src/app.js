@@ -6,6 +6,7 @@ const commentRouter = require("./routes/commentRoutes");
 
 const app = express();
 app.use(express.json());
+console.log("");
 
 app.use(userRouter);
 app.use(postRouter);
