@@ -7,9 +7,9 @@ const commentRouter = require("./routes/commentRoutes");
 const app = express();
 app.use(express.json());
 
-app.use(userRouter);
-app.use(postRouter);
-app.use(commentRouter);
+app.use("/api", userRouter);
+app.use("/api", postRouter);
+app.use("/api", commentRouter);
 
 app.use((err, req, res, next) => {
   let statusCode = res.statusCode === 200 ? 500 : res.statusCode;
